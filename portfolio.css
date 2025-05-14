@@ -1062,14 +1062,13 @@ header {
     border: 2px solid #000;
     background-color: #fff;
     position: fixed;
-    bottom: 80px;
-    right: 80px;
+    bottom: 60px;
+    right: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: -2px 5px 5px #5c5c5c;
     transform: translateX(150px);
-    animation: animate3 2s linear infinite;
     transition: 1s ease-out;
 }
 
@@ -1085,7 +1084,7 @@ header {
 
 @keyframes animate3{
     50%{
-        transform: translateY(10px) translateX(0);
+        transform: translateY(10px) translateX(150px);
     }
 }
 
@@ -1528,8 +1527,8 @@ header {
     }
 
     .scroll_btn{
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         bottom: 40px;
         right: 30px;
     }
