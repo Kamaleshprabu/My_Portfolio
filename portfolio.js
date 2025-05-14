@@ -107,3 +107,13 @@ document.getElementById('radio5').addEventListener("change", function(){
     project.classList.remove("blurin")
   }, 600)
 })
+
+const skills = document.querySelector(".skills")
+window.addEventListener("scroll", function() {
+  let distance = window.innerHeight;
+  let top = skills.getBoundingClientRect().top;
+  if(top < 0)
+    document.querySelector(".scroll_btn").classList.add("inword");
+  else
+    document.querySelector(".scroll_btn").classList.remove("inword");
+})

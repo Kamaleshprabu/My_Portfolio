@@ -1055,6 +1055,40 @@ header {
     padding: 50px;
 }
 
+.scroll_btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: #fff;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px 5px 5px #5c5c5c;
+    transform: translateX(150px);
+    animation: animate3 2s linear infinite;
+    transition: 1s ease-out;
+}
+
+.scroll_btn > a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.inword{
+    transform: translateX(0);
+}
+
+@keyframes animate3{
+    50%{
+        transform: translateY(10px) translateX(0);
+    }
+}
+
 /* smoothin animation */
 .section {
     opacity: 0;
@@ -1491,6 +1525,17 @@ header {
     .end_line{
         padding: 0px 0px 20px 0px;
         font-size: 12px;
+    }
+
+    .scroll_btn{
+        width: 30px;
+        height: 30px;
+        bottom: 40px;
+        right: 30px;
+    }
+
+    .scroll_btn > a{
+        font-size: 14px;
     }
 
 }
