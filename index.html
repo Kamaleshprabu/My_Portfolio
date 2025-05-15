@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
     <link rel="icon" href="./icon.jpg">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "h9PMeRkpq8oFe8oi4",
+        });
+    })();
+    </script>
 </head>
 
 <body>
@@ -277,6 +287,28 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d243.97828731462042!2d79.54373856037002!3d11.929247584476942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1746883617369!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
                 </div>
             </div>
+        </div>
+        <div class="mailbox">
+            <h1>Mail me</h1>
+            <form>
+                <div class="form_grp">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form_grp">
+                    <label for="email">Your Email</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form_grp">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form_grp">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4"></textarea>
+                </div>
+                <button type="submit" onclick="sendMail()">Send</button>
+            </form>
         </div>
         <div class="quote">
             <div class="quote_line">

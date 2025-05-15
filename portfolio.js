@@ -117,3 +117,13 @@ window.addEventListener("scroll", function() {
   else
     document.querySelector(".scroll_btn").classList.remove("inword");
 })
+
+function sendMail(){
+  let params = {
+    name: document.getElementById("name").Value,
+    email: document.getElementById("email").Value,
+    subject: document.getElementById("subject").Value,
+    message: document.getElementById("message").Value,
+  }
+  emailjs.send("service_96vc842", "template_m62u7rd", params).then(alert("Email Sent!"));
+}

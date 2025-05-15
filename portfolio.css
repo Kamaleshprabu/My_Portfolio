@@ -1088,6 +1088,73 @@ header {
     }
 }
 
+.mailbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mailbox > h1{
+    font-family: var(--font-2);
+    font-size: 40px;
+    z-index: 5;
+    background: url(./galaxy.jpg) center no-repeat;
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 60s linear infinite;
+}
+
+.form_grp{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form_grp > label{
+    font-family: var(--font-1);
+    font-size: 16px;
+    font-weight: bold;
+    color: #5c5c5c;
+}
+
+.form_grp > input{
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: inset -2px 5px 10px #b7b7b7;
+    outline: none;
+}
+
+.form_grp > textarea{
+    min-width: 500px;
+    max-width: 500px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: inset -2px 5px 10px #b7b7b7;
+    outline: none;
+}
+
+.mailbox > form > button{
+    padding: 10px 50px;
+    font-family: var(--font-1);
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+}
+
 /* smoothin animation */
 .section {
     opacity: 0;
@@ -1535,6 +1602,23 @@ header {
 
     .scroll_btn > a{
         font-size: 14px;
+    }
+
+    .mailbox{
+        width: 100%;
+    }
+
+    .form_grp > label{
+        font-size: 14px;
+    }
+
+    .form_grp > input{
+        width: 280px;
+    }
+
+    .form_grp > textarea{
+        min-width: 280px;
+        max-width: 280px;
     }
 
 }
