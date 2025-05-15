@@ -1096,6 +1096,7 @@ header {
     align-items: start;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .mailbox > h1{
