@@ -413,7 +413,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 100px;
-    gap: 50px;
+    gap: 30px;
     position: relative;
     background: url(./rocket_move.gif) no-repeat left;
     background-size: cover;
@@ -499,7 +499,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 100px;
-    gap: 50px;
+    gap: 30px;
     background-color: #0a0a0a;
 }
 
@@ -940,7 +940,7 @@ header {
     padding: 100px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 
 .contact > h1{
@@ -966,6 +966,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .cell{
@@ -1089,12 +1090,12 @@ header {
 }
 
 .mailbox{
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 
 .mailbox > h1{
@@ -1109,7 +1110,12 @@ header {
     animation: gradient 60s linear infinite;
 }
 
+.mailbox > form{
+    width: 100%;
+}
+
 .form_grp{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -1125,7 +1131,7 @@ header {
 }
 
 .form_grp > input{
-    width: 500px;
+    width: 100%;
     height: 40px;
     padding: 10px;
     border: 2px solid #000;
@@ -1135,8 +1141,8 @@ header {
 }
 
 .form_grp > textarea{
-    min-width: 500px;
-    max-width: 500px;
+    min-width: 100%;
+    max-width: 100%;
     height: 100px;
     padding: 10px;
     border: 2px solid #000;
@@ -1608,17 +1614,21 @@ header {
         width: 100%;
     }
 
+    .mailbox > form{
+        width: 100%;
+    }
+
     .form_grp > label{
         font-size: 14px;
     }
 
     .form_grp > input{
-        width: 280px;
+        width: 100%;
     }
 
     .form_grp > textarea{
-        min-width: 280px;
-        max-width: 280px;
+        min-width: 100%;
+        max-width: 100%;
     }
 
 }
