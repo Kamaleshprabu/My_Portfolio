@@ -1150,10 +1150,10 @@ header {
     }
 
     .hero_moon {
-        width: 550px;
-        height: 550px;
+        width: 600px;
+        height: 600px;
         top: 0px;
-        right: -300px;
+        right: -350px;
     }
 
     .hero_part1 {
