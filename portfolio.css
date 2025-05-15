@@ -1063,8 +1063,8 @@ header {
     border: 2px solid #000;
     background-color: #fff;
     position: fixed;
-    bottom: 60px;
-    right: 60px;
+    bottom: 100px;
+    right: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1081,12 +1081,6 @@ header {
 
 .inword{
     transform: translateX(0);
-}
-
-@keyframes animate3{
-    50%{
-        transform: translateY(10px) translateX(150px);
-    }
 }
 
 .mailbox{
@@ -1604,8 +1598,8 @@ header {
     .scroll_btn{
         width: 35px;
         height: 35px;
-        bottom: 40px;
-        right: 30px;
+        bottom: 100px;
+        right: 37px;
     }
 
     .scroll_btn > a{
