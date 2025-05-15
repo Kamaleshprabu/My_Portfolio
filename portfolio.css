@@ -1565,6 +1565,7 @@ header {
 
     .contact_part{
         width: 100%;
+        margin-bottom: 0;
     }
 
     .cell > h2,
