@@ -118,12 +118,21 @@ window.addEventListener("scroll", function() {
     document.querySelector(".scroll_btn").classList.remove("inword");
 })
 
-function sendMail(){
-  let params = {
-    name: document.getElementById("name").Value,
-    email: document.getElementById("email").Value,
-    subject: document.getElementById("subject").Value,
-    message: document.getElementById("message").Value,
+function sendMail(event) {
+    event.preventDefault(); // Prevent form from reloading the page
+
+    let params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value,
+    };
+
+    emailjs.send("service_96vc842", "template_m62u7rd", params)
+      .then(function(response) {
+        alert("Email Sent!");
+      }, function(error) {
+        alert("Failed to send email. Please try again.");
+        console.error(error);
+      });
   }
-  emailjs.send("service_96vc842", "template_m62u7rd", params).then(alert("Email Sent!"));
-}
