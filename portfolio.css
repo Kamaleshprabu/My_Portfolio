@@ -1154,6 +1154,7 @@ header {
     border: 2px solid #000;
     background-color: #000;
     color: #fff;
+    margin-top: 10px;
 }
 
 /* smoothin animation */
